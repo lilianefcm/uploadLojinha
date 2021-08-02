@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Artesanato Liliane Menezes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./logo Liliane Menezes_.jpg" width="10%" alt="Logo Artesanato Liliane Menezes">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="instagram">@artesanatolilianemenezes</a>
+            </li>
+            <li>
+                <a target="_blank" href="facebook">Artesanato Liliane Menezes</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:albunsefeltrosarts@gmail.com">email</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Artesanato Liliane Menezes</h1>
+                <h5>Produtos feitos em Croche</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    At nesciunt id animi sapiente aliquam consequuntur illo modi consequatur voluptatem officia ipsum, nobis ipsa. 
+                    Voluptates commodi, maxime laudantium magni consequatur temporibus?
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email ;)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
